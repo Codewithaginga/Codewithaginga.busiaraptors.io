@@ -217,3 +217,198 @@ header.sticky{
     text-align: center;
     margin-bottom: 20px;
 }
+
+.main-text{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+
+}
+
+.gallery-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+
+}
+
+.layer{
+
+    width: 100%;
+    height: 100%;
+    /*background linear(rgba(0,0,0,0,1)) #ff004f*/
+
+    position:absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    
+
+}
+
+.contact{
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.contact-text h4{
+    color: white;
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-text h2{
+    font-size: 30px;
+    line-height: 1;
+}
+
+.list{
+    margin-bottom: 2.8rem;
+}
+
+.list li{
+    margin-bottom: 12px;
+}
+
+.list li a{
+    display: block;
+    color: white;
+    font-size: 14px;
+    transition: all .45s ease;
+
+}
+
+.list li a:hover{
+    color: red;
+    transform: translateX(5px);
+
+}
+
+.contact-icons i{
+
+    height: 45px;
+    width: 45px;
+    background: maroon;
+    color: white;
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: all .45s ease;
+    border-radius: 7px;
+
+
+}
+
+.contact-icons i:hover{
+    background: white;
+    color: brown;
+}
+
+.contact-form form{
+    position: relative;
+    
+}
+
+.contact-form form input, form textarea{
+    width: 100%;
+    padding: 14px;
+    background: maroon;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: grid;
+    align-items: center;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 240px;
+}
+
+.contact-form .submit{
+    display: inline-block;
+    font-size: 16px;
+    background: red;
+    color: white;
+    width: 160px;
+    transition: all .45s ease;
+
+}
+.contact-form .submit:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.end{
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background:rgb(32, 31, 31);
+    
+}
+
+.last-text p{
+
+    align-items: center;
+    margin-left: 300px;
+    font-size: 14px;
+
+}
+
+@media (max-width: 1480px) {
+    header{
+        padding: 12px 2.5px;
+        transition: .1s;
+    }
+
+    header.sticky{
+        padding: 10px;
+        transition: .1s;
+    }
+    section{
+        padding: 110px 3% 60px;
+    }
+    .end{
+        padding: 15px 3%;
+    }
+}
+
+
